@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Balls</title>
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="navigation">
+                <div class="navigation__link"><img src="img/home.png" alt="home"> <a href="#">Главная</a></div>
+                <div class="navigation__link"><a href="#">Каталог товаров</a></div>
+                <div class="navigation__link">Воздушные шары</div>
+            </div>
+            <h1 class="head">Каталог шариков</h1>
+            <div class="selects">
+                <div class="selects__radio-group">
+                    <span class="selects__radio-group-header">Цвет:</span>
+                    <label class="radio-container">
+                        <input type="radio" class="form-check-input" name="color" value="checkedColor">
+                        <span class="radiomark radiomark-red"></span>
+                    </label>
+                    <label class="radio-container">
+                        <input type="radio" class="form-check-input" name="color" value="checkedColor" checked>
+                        <span class="radiomark radiomark-black"></span>
+                    </label>
+                    <label class="radio-container">
+                        <input type="radio" class="form-check-input" name="color" value="checkedColor">
+                        <span class="radiomark radiomark-yellow"></span>
+                    </label>
+                    <label class="radio-container">
+                        <input type="radio" class="form-check-input" name="color" value="checkedColor">
+                        <span class="radiomark radiomark-white"></span>
+                    </label>
+                    <label class="radio-container">
+                        <input type="radio" class="form-check-input" name="color" value="checkedColor">
+                        <span class="radiomark radiomark-green"></span>
+                    </label>
+                    <label class="radio-container">
+                        <input type="radio" class="form-check-input" name="color" value="checkedColor">
+                        <span class="radiomark radiomark-pink"></span>
+                    </label>
+                    <label class="radio-container">
+                        <input type="radio" class="form-check-input" name="color" value="checkedColor">
+                        <span class="radiomark radiomark-orange"></span>
+                    </label>
+
+                </div>
+
+                <div class="selects__check-group">
+                    <label class="check-container">
+                        <input type="checkbox" name="ammount">
+                        Все шары
+                        <span class="checkmark"></span>
+                    </label>
+                    <label class="check-container">
+                        <input type="checkbox" name="ammount" checked>
+                        Комплекты
+                        <span class="checkmark"></span>
+                    </label>
+                    <label class="check-container">
+                        <input type="checkbox" name="ammount">
+                        По одному
+                        <span class="checkmark"></span>
+                    </label>
+                </div>
+
+                <div class="selects__sort">
+                    Сортировать по: <a href="#">Цене</a> <img src="img/arrows.png" alt="sort">
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+    <div class="container">
+        <div class="catalog">
+            <div class="item">
+                <img class="item__img" src="img/ball-red.png" alt="ball">
+                <a href="#" class="item__name">
+                    Шары "Звезды и Кометы"
+                </a>
+                <p class="item__categories">
+                    Фигуры, латексный, полупрозрачный,
+                    средний, красный
+                </p>
+                <div class="item__price">
+                    <p class="current-price">
+                        <span class="price">
+                            75 Р
+                        </span>
+                        / шт.
+                    </p>
+                    <p class="price-before">
+                        90 Р
+                    </p>
+                </div>
+
+                <div class="item__order">
+                    <input class="input__order" type="text" value="200 шт.">
+                    <div class="item__buttons">
+                        <button class="button__plus">
+                            <img src="img/plus.png" alt="plus">
+                        </button>
+                        <button class="button__minus">
+                            <img src="img/minus.png" alt="minus">
+                        </button>
+                    </div>
+                    <img src="img/box.png" alt="box">
+                </div>
+            </div>
+            <!--1-->
+            <div class="item">
+                <img class="item__img" src="img/ball-yellow.png" alt="ball">
+                <a href="#" class="item__name">
+                    Шары "Звезды и Кометы"
+                </a>
+                <p class="item__categories">
+                    Фигуры, латексный
+                </p>
+                <div class="item__price">
+                    <p class="current-price">
+                        <span class="price">
+                            15 075 Р
+                        </span>
+                        / шт.
+                    </p>
+                    <p class="price-before">
+                        90 Р
+                    </p>
+                </div>
+
+                <div class="item__order">
+                    <input class="input__order" type="text" value="2 шт.">
+                    <div class="item__buttons">
+                        <button class="button__plus">
+                            <img src="img/plus.png" alt="plus">
+                        </button>
+                        <button class="button__minus">
+                            <img src="img/minus.png" alt="minus">
+                        </button>
+                    </div>
+                    <img src="img/box.png" alt="box">
+                </div>
+            </div>
+            <!--2-->
+            <div class="item">
+                <img class="item__img" src="img/ball-red.png" alt="ball">
+                <a href="#" class="item__name">
+                    Шары "Звезды"
+                </a>
+                <p class="item__categories">
+                    Фигуры, латексный, полупрозрачный,
+                    средний, красный
+                </p>
+                <div class="item__price">
+                    <p class="current-price">
+                        <span class="price">
+                            75 Р
+                        </span>
+                        / шт.
+                    </p>
+                    <p class="price-before">
+                        90 Р
+                    </p>
+                </div>
+
+                <div class="item__order">
+                    <input class="input__order" type="text" value="200 шт.">
+                    <div class="item__buttons">
+                        <button class="button__plus">
+                            <img src="img/plus.png" alt="plus">
+                        </button>
+                        <button class="button__minus">
+                            <img src="img/minus.png" alt="minus">
+                        </button>
+                    </div>
+                    <img src="img/box.png" alt="box">
+                </div>
+            </div>
+            <!--3-->
+            <div class="item">
+                <img class="item__img" src="img/ball-yellow.png" alt="ball">
+                <a href="#" class="item__name">
+                    Шары "Звезды и Кометы"
+                </a>
+                <p class="item__categories">
+                    Фигуры, латексный, полупрозрачный,
+                    средний, красный
+                </p>
+                <div class="item__price">
+                    <p class="current-price">
+                        <span class="price">
+                            15 075 Р
+                        </span>
+                        / шт.
+                    </p>
+                    <p class="price-before">
+                        90 Р
+                    </p>
+                </div>
+
+                <div class="item__order">
+                    <input class="input__order" type="text" value="2 шт.">
+                    <div class="item__buttons">
+                        <button class="button__plus">
+                            <img src="img/plus.png" alt="plus">
+                        </button>
+                        <button class="button__minus">
+                            <img src="img/minus.png" alt="minus">
+                        </button>
+                    </div>
+                    <img src="img/box.png" alt="box">
+                </div>
+            </div>
+            <!--4-->
+            <div class="item">
+                <img class="item__img" src="img/ball-yellow.png" alt="ball">
+                <a href="#" class="item__name">
+                    Шары "Звезды"
+                </a>
+                <p class="item__categories">
+                    Фигуры, латексный, полупрозрачный
+                </p>
+                <div class="item__price">
+                    <p class="current-price">
+                        <span class="price">
+                            15 075 Р
+                        </span>
+                        / шт.
+                    </p>
+                    <p class="price-before">
+                        90 Р
+                    </p>
+                </div>
+
+                <div class="item__order">
+                    <input class="input__order" type="text" value="2 шт.">
+                    <div class="item__buttons">
+                        <button class="button__plus">
+                            <img src="img/plus.png" alt="plus">
+                        </button>
+                        <button class="button__minus">
+                            <img src="img/minus.png" alt="minus">
+                        </button>
+                    </div>
+                    <img src="img/box.png" alt="box">
+                </div>
+            </div>
+            <!--5-->
+            <div class="item">
+                <img class="item__img" src="img/ball-yellow.png" alt="ball">
+                <a href="#" class="item__name">
+                    Шары "Звезды"
+                </a>
+                <p class="item__categories">
+                    Фигуры, латексный, полупрозрачный
+                </p>
+                <div class="item__price">
+                    <p class="current-price">
+                        <span class="price">
+                            15 075 Р
+                        </span>
+                        / шт.
+                    </p>
+                    <p class="price-before">
+                        90 Р
+                    </p>
+                </div>
+
+                <div class="item__order">
+                    <input class="input__order" type="text" value="2 шт.">
+                    <div class="item__buttons">
+                        <button class="button__plus">
+                            <img src="img/plus.png" alt="plus">
+                        </button>
+                        <button class="button__minus">
+                            <img src="img/minus.png" alt="minus">
+                        </button>
+                    </div>
+                    <img src="img/box.png" alt="box">
+                </div>
+            </div>
+            <!--6-->
+            <div class="item">
+                <img class="item__img" src="img/ball-red.png" alt="ball">
+                <a href="#" class="item__name">
+                    Шары "Кометы"
+                </a>
+                <p class="item__categories">
+                    Фигуры, латексный
+                </p>
+                <div class="item__price">
+                    <p class="current-price">
+                        <span class="price">
+                            75 Р
+                        </span>
+                        / шт.
+                    </p>
+                    <p class="price-before">
+                        90 Р
+                    </p>
+                </div>
+
+                <div class="item__order">
+                    <input class="input__order" type="text" value="200 шт.">
+                    <div class="item__buttons">
+                        <button class="button__plus">
+                            <img src="img/plus.png" alt="plus">
+                        </button>
+                        <button class="button__minus">
+                            <img src="img/minus.png" alt="minus">
+                        </button>
+                    </div>
+                    <img src="img/box.png" alt="box">
+                </div>
+            </div>
+            <!--7-->
+
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="pagination">
+            <div class="pagination__back">
+                <img src="img/left.png" alt="left">
+                <a href="#">
+                    Назад
+                </a>
+            </div>
+            <div class="pagination__pages">
+                <a href="#">1</a>
+                <a href="#">2</a>
+                <a href="#" class="active-page">3</a>
+                <a href="#">4</a>
+                <a href="#">...</a>
+                <a href="#">5</a>
+                <a href="#">6</a>
+                <a href="#">7</a>
+                <a href="#">8</a>
+            </div>
+            <div class="pagination__forward"><a href="#">Далее</a> <img src="img/right.png" alt="right"></div>
+        </div>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+
+</html>

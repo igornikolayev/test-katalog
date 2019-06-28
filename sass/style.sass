@@ -1,0 +1,363 @@
+@font-face
+    font-family: 'Myriad Pro'
+    src: url('../fonts/MyriadPro-Cond.eot')
+    src: local('Myriad Pro Condensed'), local('MyriadPro-Cond'),
+    url('../fonts/MyriadPro-Cond.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/MyriadPro-Cond.woff') format('woff'),
+    url('../fonts/MyriadPro-Cond.ttf') format('truetype')
+    font-weight: normal
+    font-style: normal
+
+@font-face 
+	font-family: 'Neo Sans Pro'
+	src: url(../fonts/NeoSansPro-Bold.eot)
+	src: local('Neo Sans Pro Bold'), local('NeoSansPro-Bold'), url(../fonts/NeoSansPro-Bold.eot?#iefix) format('embedded-opentype'), url(../fonts/NeoSansPro-Bold.woff) format('woff'), url(../fonts/NeoSansPro-Bold.ttf) format('truetype')
+	font-weight: bold
+	font-style: normal
+
+@font-face 
+	font-family: 'Neo Sans Pro'
+	src: url(../fonts/NeoSansPro-Medium.eot)
+	src: local('Neo Sans Pro Medium'), local('NeoSansPro-Medium'), url(../fonts/NeoSansPro-Medium.eot?#iefix) format('embedded-opentype'), url(../fonts/NeoSansPro-Medium.woff) format('woff'), url(../fonts/NeoSansPro-Medium.ttf) format('truetype')
+	font-weight: 500
+	font-style: normal
+
+@font-face 
+	font-family: 'Neo Sans Pro'
+	src: url(../fonts/NeoSansPro-LightItalic.eot)
+	src: local('Neo Sans Pro Light Italic'), local('NeoSansPro-LightItalic'), url(../fonts/NeoSansPro-LightItalic.eot?#iefix) format('embedded-opentype'), url(../fonts/NeoSansPro-LightItalic.woff) format('woff'), url(../fonts/NeoSansPro-LightItalic.ttf) format('truetype')
+	font-weight: 300
+	font-style: italic
+
+@font-face 
+	font-family: 'Neo Sans Pro'
+	src: url(../fonts/NeoSansPro-Regular.eot)
+	src: local('Neo Sans Pro'), local('NeoSansPro-Regular'), url(../fonts/NeoSansPro-Regular.eot?#iefix) format('embedded-opentype'), url(../fonts/NeoSansPro-Regular.woff) format('woff'), url(../fonts/NeoSansPro-Regular.ttf) format('truetype')
+	font-weight: normal
+	font-style: normal
+
+@font-face 
+	font-family: 'Neo Sans Pro Ultra'
+	src: url(../fonts/NeoSansPro-Ultra.eot)
+	src: local('Neo Sans Pro Ultra'), local('NeoSansPro-Ultra'), url(../fonts/NeoSansPro-Ultra.eot?#iefix) format('embedded-opentype'), url(../fonts/NeoSansPro-Ultra.woff) format('woff'), url(../fonts/NeoSansPro-Ultra.ttf) format('truetype')
+	font-weight: 900
+	font-style: normal
+
+@font-face 
+	font-family: 'Neo Sans Pro'
+	src: url(../fonts/NeoSansPro-BoldItalic.eot)
+	src: local('Neo Sans Pro Bold Italic'), local('NeoSansPro-BoldItalic'), url(../fonts/NeoSansPro-BoldItalic.eot?#iefix) format('embedded-opentype'), url(../fonts/NeoSansPro-BoldItalic.woff) format('woff'), url(../fonts/NeoSansPro-BoldItalic.ttf) format('truetype')
+	font-weight: bold
+	font-style: italic
+
+@font-face 
+	font-family: 'Neo Sans Pro'
+	src: url(../fonts/NeoSansPro-Light.eot)
+	src: local('Neo Sans Pro Light'), local('NeoSansPro-Light'), url(../fonts/NeoSansPro-Light.eot?#iefix) format('embedded-opentype'), url(../fonts/NeoSansPro-Light.woff) format('woff'), url(../fonts/NeoSansPro-Light.ttf) format('truetype')
+	font-weight: 300
+	font-style: normal
+
+@font-face 
+	font-family: 'Neo Sans Pro'
+	src: url(../fonts/NeoSansPro-Italic.eot)
+	src: local('Neo Sans Pro Italic'), local('NeoSansPro-Italic'), url(../fonts/NeoSansPro-Italic.eot?#iefix) format('embedded-opentype'), url(../fonts/NeoSansPro-Italic.woff) format('woff'), url(../fonts/NeoSansPro-Italic.ttf) format('truetype')
+	font-weight: normal
+	font-style: italic
+
+*
+    margin: 0
+    padding: 0
+    font-family: 'Neo Sans Pro'
+    box-sizing: border-box
+    font-weight: 400
+a
+    transition: all 4.6s ease
+    &:hover
+        text-decoration: none
+
+.container
+    width: 100%
+    max-width: 960px
+    margin-left: auto
+    margin-right: auto
+
+.header
+    padding-top: 26px
+
+.navigation
+    color: #939ca2
+    font-family: 'Myriad Pro'
+    font-size: 13px
+    display: flex
+    align-items: center
+    margin-bottom: 15px
+    &__link
+        display: flex
+        align-items: center
+        position: relative
+        margin-right: 6px
+        img
+            margin-right: 6px
+        
+    a
+        color: #939ca2
+        font-size: 13px
+
+.navigation__link:nth-of-type(1)::after, .navigation__link:nth-of-type(2)::after
+    content: ''
+    display: inline-block
+    background: #939ca2
+    position: relative
+    top: 2px
+    width: 13px
+    height: 1px
+    margin-left: 6px
+
+
+
+.head
+    font-size: 28px
+    font-weight: 500
+    color: #222222
+    margin-bottom: 17px
+
+.selects
+    padding: 12px
+    color: #4c4c4c
+    font-size: 14px
+    background: #eef8ff
+    border: 2px solid #e5f0fb
+    border-radius: 10px
+    margin-bottom: 25px
+    display: flex
+    justify-content: space-between
+    align-items: center
+    &__radio-group, &__check-group
+        display: flex
+        align-items: center
+        border-right: 1px solid #c2d1dc
+    &__sort
+        a
+            color: #ff0000
+            text-decoration-style: dotted
+            margin-left: 10px
+    &__radio-group
+        width: 33%    
+.selects__radio-group-header
+    margin-right: 10px  
+//catalog
+.catalog
+    display: flex
+    flex-wrap: wrap
+    
+.item
+    width: 190px
+    padding: 14px 30px
+    border: 1px solid #d0dbe6
+    border-radius: 10px
+    text-align: center
+    display: flex
+    flex-direction: column
+    &__name
+        display: block
+        font-size: 14px
+        color: #0093ca
+        margin-top: 6px
+        height: 14%
+    &__categories
+        color: #494949
+        font-size: 13px
+        height: 20%
+        margin-top: 7px
+        margin-bottom: 7px
+    &__price
+        .current-price
+            color: #393939
+            font-size: 12px
+            .price
+                color: #000000
+                font-size: 18px
+                font-weight: 700
+        .price-before
+            color: #aaaaaa
+            font-size: 15px
+            position: relative
+            &::after
+                content: ''
+                display: inline-block
+                background: #ff1c1c
+                width: 42px
+                height: 2px
+                position: absolute
+                left: 42px
+                top: 8px
+                transform: rotate(352deg)
+    &__order
+        margin-top: 5px
+        display: flex
+        align-items: center
+        background: #eef8ff
+        border-radius: 20px
+        padding-left: 5px
+        input
+            max-width: 63px
+            border-radius: 20px
+            outline: none
+            border: 1px solid #cacbcb
+            color: #1f1f1f
+            font-size: 13px
+            padding: 9px
+            padding-right: 0
+        img
+            cursor: pointer
+    &__buttons
+        button
+            background: none
+            border: none
+            position: relative
+            outline: none
+            cursor: pointer
+        .button__plus
+            top: 5px
+        .button__minus
+            bottom: 5px
+
+
+.pagination
+    background: #eef8ff
+    border: 2px solid #e5f0fb
+    border-radius: 10px
+    display: flex
+    justify-content: space-between
+    padding: 15px
+    margin-top: 30px
+    margin-bottom: 30px
+    a
+        color: #60666a
+        font-size: 14px
+        &:hover
+            font-weight: 700
+    .active-page
+        font-weight: 700
+    &__pages
+        a
+            margin-right: 6px
+
+
+//checkbox
+
+   
+.check-container
+    display: block
+    position: relative
+    cursor: pointer
+    user-select: none
+    margin-right: 35px
+    input
+        position: relative
+        opacity: 0
+        cursor: pointer
+        height: 0
+        width: 0
+.checkmark
+    position: absolute
+    top: 0
+    left: -17px
+    height: 16px
+    width: 16px
+    background-color: #d7e2ea
+    border: 1px solid #bdcbd5
+    border-radius: 5px
+
+.check-container input:checked ~ .checkmark
+    background-color: #f73e3d
+    border-color: #c12524
+.checkmark:after
+    content: ""
+    position: absolute
+    display: none
+.check-container
+    input:checked ~ .checkmark:after
+        display: block
+    .checkmark:after
+        left: 5px
+        top: 2px
+        width: 3px
+        height: 7px
+        border: solid white
+        border-width: 0 1.5px 1.5px 0
+        transform: rotate(45deg)
+
+//radiobutton
+
+.radio-container
+    display: block
+    position: relative
+    padding-left: 12px
+    cursor: pointer
+    user-select: none
+    input
+        position: relative
+        opacity: 0
+        cursor: pointer
+
+
+.radiomark-red
+    background: #e3001d
+.radiomark-black
+    background: #3b3b3b
+.radiomark-yellow
+    background: #e3c400
+.radiomark-white
+    background: #ffffff
+.radiomark-green
+    background: #76e300
+.radiomark-pink
+    background: #e300a0
+.radiomark-orange
+    background: #e37000
+    
+.radiomark
+    position: absolute
+    top: 2px
+    left: 0
+    height: 17px
+    width: 17px
+    border-radius: 50%
+
+.radiomark:after
+    content: ""
+    position: absolute
+    display: none
+
+
+.radio-container
+    input:checked ~ .radiomark:after
+        display: block
+    .radiomark:after
+        top: -5px
+        left: -5px
+        width: 23px
+        height: 23px
+        border-radius: 50%
+        background: none
+        border: 2px solid #ff4343
+
+
+@media screen and (max-width: 844px)
+    .selects
+        display: flex
+        flex-direction: column
+    .selects__radio-group, .selects__check-group, .selects__sort
+        margin-bottom: 20px
+        justify-content: center
+        border: none 
+    
+@media screen and (max-width: 400px)
+    .selects__check-group
+        margin-left: 5%
+    .catalog
+        flex-direction: column
+        align-items: center
+    .item
+        margin-bottom: 10px
